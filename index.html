@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-</head>
 
-<body>
-Content of the document......
-</body>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<title>Login page</title>
+	</head>
+	
+	<body>
+		<p>LOGIN</p>
+		<form>
+			<input type="text" placeholder="User" id="us" required/>
+			<p></p>
+			<input type="password" placeholder="Password" id="pass" required/>
+			<p></p>
+			<input type="submit" id="bt" value="Login" onclick="myAlert()"/>
+		</form>
+		<script>
+		function myAlert() {
+		    var nombre = document.getElementById("us");
+		    var contra = document.getElementById("pass");
+		    if (nombre.value == contra.value) {
+		        alert("LOGIN SUCCEED!\n");
+		    } else {
+		        alert("FIELDS ARE NOT THE SAME!\n");
+		    }
+		}
+		</script>
+	</body>
 
 </html>
